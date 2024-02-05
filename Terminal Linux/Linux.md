@@ -36,3 +36,20 @@ drwxr-x--- 15 gbuser gbuser 4096 фев  5 19:27  ..
 ````
 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
    из этого репозитория.
+````bash
+gbuser@gbuser-VirtualBox:~$ wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+--2024-02-05 19:31:27--  https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+Resolving dev.mysql.com (dev.mysql.com)... 23.52.29.249, 2a02:26f0:9500:98d::2e31, 2a02:26f0:9500:98f::2e31
+Connecting to dev.mysql.com (dev.mysql.com)|23.52.29.249|:443... connected.
+HTTP request sent, awaiting response... 302 Moved Temporarily
+Location: https://repo.mysql.com//mysql-apt-config_0.8.24-1_all.deb [following]
+--2024-02-05 19:31:28--  https://repo.mysql.com//mysql-apt-config_0.8.24-1_all.deb
+Resolving repo.mysql.com (repo.mysql.com)... 23.210.173.94, 2a02:26f0:9500:b83::1d68, 2a02:26f0:9500:b8a::1d68
+Connecting to repo.mysql.com (repo.mysql.com)|23.210.173.94|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 18048 (18K) [application/x-debian-package]
+Saving to: ‘mysql-apt-config_0.8.24-1_all.deb’
+mysql-apt-config_0.8.24 100%[=============================>]  17,62K  --.-KB/s    in 0s      
+2024-02-05 19:31:29 (121 MB/s) - ‘mysql-apt-config_0.8.24-1_all.deb’ saved [18048/18048]
+````
+
