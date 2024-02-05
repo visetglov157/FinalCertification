@@ -1,3 +1,4 @@
+````bash
 gbuser@gbuser-VirtualBox:~$ cat > 'Домашние животные'
 Собаки
 Кошки
@@ -17,4 +18,4 @@ gbuser@gbuser-VirtualBox:~$ cat 'Все животные'
 Верблюды
 Ослы
 gbuser@gbuser-VirtualBox:~$ mv 'Все животные' 'Друзья человека'
-
+````
