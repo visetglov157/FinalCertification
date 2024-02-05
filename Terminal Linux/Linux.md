@@ -70,5 +70,5 @@ Setting up mysql-common (5.8+1.0.8) ...
 update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in
  auto mode
 ````
-
+4. Установить и удалить deb-пакет с помощью dpkg.
 
