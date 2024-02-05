@@ -8,3 +8,4 @@
 ````bash
 create database human_friends;
 ````
+8. Создать таблицы с иерархией из диаграммы в БД
