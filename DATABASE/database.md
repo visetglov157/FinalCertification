@@ -5,3 +5,6 @@
 ![1](https://github.com/visetglov157/FinalCertification/assets/115417107/7d1633ef-7b79-46ea-8c7a-a80d5ca95e7e)
 7. В подключенном MySQL репозитории создать базу данных “Друзья
    человека”
+````bash
+create database human_friends;
+````
