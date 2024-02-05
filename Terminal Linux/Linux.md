@@ -51,5 +51,24 @@ Length: 18048 (18K) [application/x-debian-package]
 Saving to: ‘mysql-apt-config_0.8.24-1_all.deb’
 mysql-apt-config_0.8.24 100%[=============================>]  17,62K  --.-KB/s    in 0s      
 2024-02-05 19:31:29 (121 MB/s) - ‘mysql-apt-config_0.8.24-1_all.deb’ saved [18048/18048]
+gbuser@gbuser-VirtualBox:~$ sudo apt install mysql-common
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  mysql-common
+0 upgraded, 1 newly installed, 0 to remove and 149 not upgraded.
+Need to get 7 212 B of archives.
+After this operation, 34,8 kB of additional disk space will be used.
+Get:1 http://ru.archive.ubuntu.com/ubuntu jammy/main amd64 mysql-common all 5.8+1.0.8 [7 212 B]
+Fetched 7 212 B in 0s (79,1 kB/s)   
+Selecting previously unselected package mysql-common.
+(Reading database ... 181773 files and directories currently installed.)
+Preparing to unpack .../mysql-common_5.8+1.0.8_all.deb ...
+Unpacking mysql-common (5.8+1.0.8) ...
+Setting up mysql-common (5.8+1.0.8) ...
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in
+ auto mode
 ````
+
 
