@@ -9,3 +9,16 @@
 create database human_friends;
 ````
 8. Создать таблицы с иерархией из диаграммы в БД
+````bash
+create database human_friends;
+use human_friends;
+create table animals
+(
+	Id INT auto_increment primary key,
+    animal_type varchar(30)
+);
+insert into animals (animal_type)
+values
+		('Домашние животные'),
+        ('Вьючные животные');
+````
