@@ -25,3 +25,13 @@ gbuser@gbuser-VirtualBox:~$ cat 'Все животные'
 gbuser@gbuser-VirtualBox:~$ mv 'Все животные' 'Друзья человека'
 ````
 2. Создать директорию, переместить файл туда.
+````bash
+gbuser@gbuser-VirtualBox:~$ mkdir animals
+gbuser@gbuser-VirtualBox:~$ mv 'Друзья человека' animals/'Друзья человека'
+gbuser@gbuser-VirtualBox:~$ ls -la animals
+total 12
+drwxrwxr-x  2 gbuser gbuser 4096 фев  5 19:27  .
+drwxr-x--- 15 gbuser gbuser 4096 фев  5 19:27  ..
+-rw-rw-r--  1 gbuser gbuser   76 фев  5 19:16 'Друзья человека'
+````
+
