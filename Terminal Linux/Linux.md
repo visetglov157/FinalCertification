@@ -98,5 +98,23 @@ Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
 Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
 Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
 ````
+5. Выложить историю команд в терминале ubuntu.
+````bash
+1 cat > 'Домашние животные'
+2 cat > 'Вьючные животные'
+3 cat 'Домашние животные' 'Вьючные животные' > 'Все животные'
+4 cat 'Все животные'
+5 mv 'Все животные' 'Друзья человека'
+6 mkdir animals
+7 mv 'Друзья человека' animals/'Друзья человека'
+8 ls -la animals
+9 wget https://dev.mysql.com/get/mysql-apt-config_0.8.24-1_all.deb
+10 sudo apt-get update 
+11 sudo apt install mysql-common
+12 apt download lftp
+13 sudo dpkg -i lftp_4.9.2-1build1_amd64.deb
+14 sudo dpkg -r lftp
+15 history
+````
 
 
