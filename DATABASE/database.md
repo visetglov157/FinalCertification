@@ -14,11 +14,11 @@ create database human_friends;
 use human_friends;
 create table animals
 (
-	Id INT auto_increment primary key,
+    Id INT auto_increment primary key,
     animal_type varchar(30)
 );
 insert into animals (animal_type)
 values
-		('Домашние животные'),
+	('Домашние животные'),
         ('Вьючные животные');
 ````
