@@ -48,8 +48,37 @@ VALUES
         ('Ослы');  
 ````
 9. Заполнить низкоуровневые таблицы именами(животных), командами которые они выполняют и датами рождения.
+````bash
+create table dogs
+(
+	Id INT auto_increment primary key,
+    name varchar(30),
+    commands varchar(100),
+    birthday date,
+    animal_kind_id INT default 1,
+    foreign key (animal_kind_id) references pets (id) on delete cascade on update cascade
+);
+INSERT INTO dogs (name, commands, birthday)
+VALUES 
+	('Старк', 'лежать, сидеть', '2021-05-28'),
+	('Бобик', 'дай лапу, фас', '2016-05-08'),
+	('Снежок', 'место, голос', '2020-03-25');
 
-
+create table cats
+(       
+    Id INT auto_increment primary key,
+    name VARCHAR(30), 
+    commands VARCHAR(100),
+    birthday DATE,
+    animal_kind_id INT DEFAULT 2,
+    Foreign KEY (animal_kind_id) REFERENCES pets (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+INSERT INTO cats (name, commands, birthday)
+VALUES 
+	('Анфиса', 'лежать', '2022-03-15'),
+	('Мурка', 'дай лапу', '2017-03-09'),
+	('Кузя', 'ко мне', '2019-02-21');
+````
 
 
 
