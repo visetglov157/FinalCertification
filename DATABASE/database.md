@@ -21,4 +21,16 @@ insert into animals (animal_type)
 values
 	('Домашние животные'),
         ('Вьючные животные');
+create table pets
+(
+	Id INT auto_increment primary key,
+    animal_kind varchar(30) not null,
+    animal_type_id INT default 1,
+    foreign key (animal_type_id) references animals (id)
+);
+insert into pets (animal_kind)
+values
+		('Собаки'),
+        ('Кошки'),
+        ('Хомяки');
 ````
