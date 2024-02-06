@@ -30,7 +30,20 @@ create table pets
 );
 insert into pets (animal_kind)
 values
-		('Собаки'),
+        ('Собаки'),
         ('Кошки'),
         ('Хомяки');
+CREATE TABLE pack_animals
+(
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	animal_kind VARCHAR(30),
+	animal_type_id INT DEFAULT 2,
+	FOREIGN KEY (animal_type_id) REFERENCES animals (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+
+INSERT INTO pack_animals (animal_kind)
+VALUES 
+	('Лошади'), 
+        ('Верблюды'), 
+        ('Ослы');  
 ````
