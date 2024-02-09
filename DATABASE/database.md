@@ -159,3 +159,4 @@ SELECT name, commands, birthday, animal_kind_id, TIMESTAMPDIFF(MONTH, birthday, 
 FROM all_animals
 WHERE birthday BETWEEN ADDDATE(CURDATE(), INTERVAL -3 YEAR) AND ADDDATE(CURDATE(), INTERVAL -1 YEAR);
 ````
+12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на прошлую принадлежность к старым таблицам.
