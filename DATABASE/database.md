@@ -92,7 +92,36 @@ INSERT INTO hamsters (name, commands, birthday)
 VALUES ('Рыжик', 'стоять', '2021-06-11'),
 ('Умка', 'гулять', '2016-02-19'),
 ('Черныш', 'кушать', '2019-04-21');
-````
 
+CREATE TABLE horses 
+(       
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    name VARCHAR(30), 
+    commands VARCHAR(100),
+    birthday DATE,
+    animal_kind_id INT DEFAULT 1,
+    Foreign KEY (animal_kind_id) REFERENCES pack_animals (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+INSERT INTO horses (name, commands, birthday)
+VALUES 
+		('Призрак', 'тише, хоп, вперед', '2021-03-12'),
+		('Орхидея', 'стой, рысь, шагом', '2016-05-15'),
+		('Кондор', 'стой, шагом, хоп', '2018-02-27');
+
+CREATE TABLE camels 
+(       
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    name VARCHAR(30), 
+    commands VARCHAR(100),
+    birthday DATE,
+    animal_kind_id INT DEFAULT 2,
+    Foreign KEY (animal_kind_id) REFERENCES pack_animals (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+INSERT INTO camels (name, commands, birthday)
+VALUES 
+		('Джеси', 'гоп', '2021-02-15'),
+		('Лип', 'пошел', '2016-11-05'),
+		('Даси', 'стой', '2017-07-21');
+````
 
 
