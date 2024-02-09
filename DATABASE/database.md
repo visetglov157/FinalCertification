@@ -122,6 +122,20 @@ VALUES
 		('Джеси', 'гоп', '2021-02-15'),
 		('Лип', 'пошел', '2016-11-05'),
 		('Даси', 'стой', '2017-07-21');
-````
 
+CREATE TABLE donkeys 
+(       
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    name VARCHAR(30), 
+    commands VARCHAR(100),
+    birthday DATE,
+    animal_kind_id INT DEFAULT 3,
+    Foreign KEY (animal_kind_id) REFERENCES pack_animals (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+INSERT INTO donkeys (name, commands, birthday)
+VALUES 
+		('Мейбл', 'вперед', '2020-03-19'),
+		('Дино', 'стоять', '2017-10-15'),
+		('Гуфи', 'сесть', '2022-08-24');
+````
 
