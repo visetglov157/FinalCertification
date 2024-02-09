@@ -146,3 +146,16 @@ create table horses_and_donkeys select * from horses
 union select * from donkeys;
 ````
 11. Создать новую таблицу “молодые животные” в которую попадут все животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью до месяца подсчитать возраст животных в новой таблице
+````bash
+CREATE TEMPORARY TABLE all_animals
+SELECT * FROM dogs
+UNION SELECT * FROM cats
+UNION SELECT * FROM hamsters
+UNION SELECT * FROM horses
+UNION SELECT * FROM donkeys;
+
+CREATE TABLE young_animals
+SELECT name, commands, birthday, animal_kind_id, TIMESTAMPDIFF(MONTH, birthday, CURDATE()) AS age_in_month
+FROM all_animals
+WHERE birthday BETWEEN ADDDATE(CURDATE(), INTERVAL -3 YEAR) AND ADDDATE(CURDATE(), INTERVAL -1 YEAR);
+````
