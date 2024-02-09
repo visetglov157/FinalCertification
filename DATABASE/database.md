@@ -78,8 +78,21 @@ VALUES
 	('Анфиса', 'лежать', '2022-03-15'),
 	('Мурка', 'дай лапу', '2017-03-09'),
 	('Кузя', 'ко мне', '2019-02-21');
-````
 
+CREATE TABLE hamsters 
+(       
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    name VARCHAR(30), 
+    commands VARCHAR(100),
+    birthday DATE,
+    animal_kind_id INT DEFAULT 3,
+    Foreign KEY (animal_kind_id) REFERENCES pets (id) ON DELETE CASCADE ON UPDATE CASCADE
+);
+INSERT INTO hamsters (name, commands, birthday)
+VALUES ('Рыжик', 'стоять', '2021-06-11'),
+('Умка', 'гулять', '2016-02-19'),
+('Черныш', 'кушать', '2019-04-21');
+````
 
 
 
