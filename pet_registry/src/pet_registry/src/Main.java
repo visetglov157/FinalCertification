@@ -1,4 +1,4 @@
-package src;
+package pet_registry.src;
 import controller.Controller;
 import model.FileOperation;
 import model.Repository;
