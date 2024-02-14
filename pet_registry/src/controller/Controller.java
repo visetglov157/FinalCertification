@@ -1,7 +1,7 @@
-package pet_registry.src.controller;
+package controller;
 
-import pet_registry.src.model.Animal;
-import pet_registry.src.model.Repository;
+import model.Animal;
+import model.Repository;
 
 import java.util.List;
 
